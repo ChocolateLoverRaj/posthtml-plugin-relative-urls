@@ -1,0 +1,42 @@
+name: Test
+on:
+  push: 
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+        
+      - name: Install Dependencies
+        run: npm i
+
+      - name: Run Lint
+        run: npm run lint
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        nodeVersion: [10, 12, 14, 15]
+    steps:
+      - name: Setup Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{matrix.nodeVersion}}
+        
+      - name: Install Dependencies
+        run: npm i
+
+      - name: Run Tests
+        run: npm test

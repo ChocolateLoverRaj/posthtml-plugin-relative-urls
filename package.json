@@ -1,0 +1,35 @@
+{
+  "name": "posthtml-plugin-relative-urls",
+  "version": "1.0.0",
+  "description": "A posthtml plugin that prepends urls with a dot.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChocolateLoverRaj/posthtml-plugin-relative-urls.git"
+  },
+  "keywords": [
+    "posthtml",
+    "plugin",
+    "url",
+    "relative",
+    "dot"
+  ],
+  "author": "Rajas Paranjpe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChocolateLoverRaj/posthtml-plugin-relative-urls/issues"
+  },
+  "homepage": "https://github.com/ChocolateLoverRaj/posthtml-plugin-relative-urls#readme",
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-standard": "^16.0.2",
+    "mocha": "^8.3.2"
+  },
+  "peerDependencies": {
+    "posthtml": "0.15.2"
+  }
+}
