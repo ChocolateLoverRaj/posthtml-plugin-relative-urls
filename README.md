@@ -1,6 +1,6 @@
 [![Test](https://github.com/ChocolateLoverRaj/posthtml-plugin-relative-urls/actions/workflows/test.yml/badge.svg)](https://github.com/ChocolateLoverRaj/posthtml-plugin-relative-urls/actions/workflows/test.yml)
 [![License](https://badgen.net/github/license/standard/ts-standard)](https://github.com/standard/ts-standard/blob/master/LICENSE)
-[![Code Style - Standard](https://standardjs.com/)](https://img.shields.io/badge/code_style-standard-brightgreen.svg)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 # posthtml-plugin-relative-urls
 A plugin for posthtml which changes absolute urls to relative urls.
