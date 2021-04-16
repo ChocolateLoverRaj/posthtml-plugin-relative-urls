@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        nodeVersion: [10, 12, 14, 15]
+        nodeVersion: [12, 14, 15]
     steps:
       - name: Setup Repo
         uses: actions/checkout@v2
